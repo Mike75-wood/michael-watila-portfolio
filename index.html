@@ -18,24 +18,22 @@
         body{
             background:#f4f4f4;
             color:#222;
-			padding-top:90px;
+			
         }
 
         /* NAVBAR */
 
-        nav{
+       nav{
     background:black;
     color:white;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    gap:40px;
-    padding:15px 20px;
+    padding:15px 5%;
     position:fixed;
     top:0;
     width:100%;
     z-index:1000;
-    flex-wrap:wrap;
 }
 
         nav h1{
@@ -43,12 +41,10 @@
             font-size:30px;
         }
 
-       nav ul{
+      nav ul{
     display:flex;
     list-style:none;
     gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
 }
 
         nav a{
@@ -66,6 +62,7 @@
 
         .hero{
             min-height:100vh;
+            padding-top:120px;
             display:flex;
             justify-content:center;
             align-items:center;
@@ -269,34 +266,39 @@
 @media(max-width:768px){
 
     nav{
-        flex-direction:column;
-        gap:15px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 4%;
     }
 
     nav h1{
-        font-size:24px;
+        font-size:22px;
     }
 
     nav ul{
-        justify-content:center;
-        gap:12px;
+        gap:10px;
     }
 
-    nav ul li a{
-        font-size:14px;
+    nav a{
+        font-size:13px;
+    }
+
+    .hero{
+        padding-top:140px;
     }
 
     .hero h2{
-        font-size:38px;
+        font-size:34px;
     }
 
     .hero p{
-        font-size:18px;
+        font-size:17px;
     }
 
     .profile{
-        width:200px;
-        height:200px;
+        width:180px;
+        height:180px;
     }
 
     .skill{
@@ -308,7 +310,6 @@
     }
 
 }
-
     </style>
 
 </head>
